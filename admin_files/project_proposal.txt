@@ -1,0 +1,12 @@
+Carter Gunderson
+Brianna Manolopoulos
+
+Autmated Greenhouse Machine
+
+We're proposing creating software that would use a Raspberry Pi to take in sensor information 
+(temperature/humidity/soil pH) and use altorithms to adjust conditions in the greenhouse
+(water plants, turn on fan or lights, ping the user to adjust soil pH).
+
+Ideas for creating stretch goals would be things like integrating information about energy useage
+or creating web/phone apps to allow the user to make manual adjustments based on what sensor information
+is being collected.
