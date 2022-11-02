@@ -1,0 +1,51 @@
+// Array with location coordinates
+{"coord":
+  {"lon":-123.05,
+  "lat":47.1},
+// Some kind of container with array
+// containing weather information/descriptions
+"weather":
+  [{"id":500,
+    "main":"Rain",
+    "description":"light rain",
+    "icon":"10d"}],
+// Info about where measurements came from?
+"base":"stations",
+
+
+// Main weather information
+
+// Temp in Kelvin
+// F = 1.8*(K-273) + 32
+
+// pressure in millibars
+// 1 millibar = 9.869x10-4 atm
+
+"main":
+  {"temp":280.9,
+  "feels_like":279.26,
+  "temp_min":278.67,
+  "temp_max":282.75,
+  "pressure":1004,
+  "humidity":81},
+"visibility":10000,
+
+// Units for wind speed?
+"wind":
+  {"speed":2.57,
+  "deg":170},
+"rain":
+  {"1h":0.71},
+"clouds":
+  {"all":0},
+"dt":1667350124,
+"sys":
+  {"type":2,
+  "id":2072858,
+  "country":"US",
+  "sunrise":1667314512,
+  "sunset":1667350573},
+"timezone":-25200,
+"id":5805687,
+"name":"Olympia",
+"cod":200}
