@@ -1,7 +1,7 @@
 #!/bin/bash
-
+#cd [enter the path to your program's directory here]
 cd /home/pi/Gardenbot/dsaGreenhouseProjectFall2022/testing-api/
-
+#java [yourProgram] > [where you want output]
 java Main > output.txt
 
 # this is the script that cron runs
@@ -16,7 +16,7 @@ java Main > output.txt
 # it could be called something else in your case so write that instead
 # then the output gets put in output.txt that part is just to test it
 
-# so to get cron to do this job, I dont know how to get a script to configure cron for you
+# so to get cron to do this job, 
 # to give the job to cron is like one well placed line of code though so check it out:
 # get to cron's table in editor mode with the command 
 # crontab -e
