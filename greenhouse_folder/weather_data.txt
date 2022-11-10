@@ -1,0 +1,4 @@
+// A file where we can store weather data. 
+// We'll need to figure out if we want to just keep appending weather data into one big file.
+// Another option would be to have a class variable in our program that keeps track of how many weather
+// files we have and use that to increment the names of our separate files for each weather data point.
