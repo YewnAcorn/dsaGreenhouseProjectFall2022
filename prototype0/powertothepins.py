@@ -6,6 +6,8 @@ GPIO.setup(17, GPIO.OUT) # pin 11 on the board
 
 rain = True
 
+
+# will be reading from activity_log.txt
 # need to make sure we're reading the last line
 r = open('/home/pi/Gardenbot/dsaGreenhouseProjectFall2022/testing-api/isItRain.txt', 'r')
 code = r.readline()
