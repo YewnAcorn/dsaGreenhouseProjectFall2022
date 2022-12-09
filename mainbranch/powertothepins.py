@@ -4,10 +4,15 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(17, GPIO.OUT) # pin 11 on the board
 
 
-rain = True
 
-r = open('/home/pi/Gardenbot/dsaGreenhouseProjectFall2022/testing-api/isItRain.txt', 'r')
-code = r.readline()
+
+weatherData = open('./activity_log.txt', 'r')
+for line in weatherData:
+    pass
+last_line = line
+
+
+code = last_line.readline()
 
 if (code == 'rain\n'):
     rain = True
