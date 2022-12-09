@@ -7,10 +7,10 @@ import java.nio.file.StandardOpenOption;
 public class Write_Out {
   static Path outputFilePath;
   
-    public static void addLineToFile(String dataLine){
+    public static void addLineToFile(String dataLine, String filepath){
 
       // Initializing file Path with some conditions
-      outputFilePath = Paths.get(".", "action_log.txt");
+      outputFilePath = Paths.get(".", filepath);
       try {
         Files.writeString(outputFilePath, dataLine + "\n", StandardOpenOption.APPEND);
         System.out.println(dataLine);
