@@ -1,6 +1,14 @@
 public class Main {
   public static void main(String[] args){
        
+    
+    CallAPI.call();
+
+    Parser.read("./output.json");
+        //Write_Out to weather_data.txt
+
+    LinkedList(./weather_data.txt);
+    shotcaller(./weather_data.txt);
     // will need to instantiate read and write classes
     
     // cron is going to call main
