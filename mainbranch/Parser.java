@@ -4,12 +4,13 @@ import java.io.IOException;
 import org.json.JSONObject;
 import org.json.JSONArray;
 
-public class MainParser {
+public class Parser {
     
-    public static void main(String[] args) throws IOException {
+    public static void read(String fpath) throws IOException {
         
     	//creates new buffered reader to read WeatherReportJSON.txt
-        BufferedReader br = new BufferedReader(new FileReader("/home/pi/Gardenbot/dsaGreenhouseProjectFall2022/testing-api/output.json"));            
+	//give relative path as argument
+        BufferedReader br = new BufferedReader(new FileReader(fpath));            
         String line; //holds line
 
         //declare string builder object
