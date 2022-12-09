@@ -3,10 +3,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import org.json.JSONObject;
 import org.json.JSONArray;
-
+import java.util.date;
 public class Parser {
     
-    public static void read(String fpath) throws IOException {
+    public static String[] read(String fpath) throws IOException {
         
     	//creates new buffered reader to read WeatherReportJSON.txt
 	//give relative path as argument
@@ -38,18 +38,31 @@ public class Parser {
        
 	//test print weatherID
 	//System.out.println(weatherID);
-
         
-        /*
         //Using JSONArray
         JSONArray arrObj = jsonObj.getJSONArray("main");
         
         double temp = arrObj.getJSONObject(0).getDouble("temp");
         System.out.println(temp);
-        */
-
-	//get date
-	//java.util.date	
+        
+	Date currentDate = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd");
+	String returnDate = dateFormat.format(currentDate);
+	    
+	//convert to strings    
+	String weatheridee = (String)weatherID;
+	String tempString = (String)temp;
+	String[] returnArray = {returnDate, weatheridee, tempString};
+	
+	for(int b = 0; b < returnArray.length - 1; b++)
+	{
+		Write_Out.addLineToFile(returnArray[b] + ", ", "weather_data.txt");
+	}
+	Write_Out.addLineToFile(returnArray[2] + "\n", "weather_data.txt");
+	    
+	
+	return returnArray;
+		
 
 	//write to file
 	//format: mm/dd/yy, string id
