@@ -2,13 +2,18 @@ public class Main {
   public static void main(String[] args){
        
     
-    CallAPI.call();
+     CallAPI.call();
 
-    Parser.read("./output.json");
-        //Write_Out to weather_data.txt
+     LinkedList myList = new LinkedList();
 
-    LinkedList(./weather_data.txt);
-    shotcaller(./weather_data.txt);
+     Parser.read("./output.json");
+     //Write_Out to weather_data.txt
+
+     String[] recentData = Read_File.getLastLine().split(",");
+
+     boolean water = recentData[0];
+     shotcaller(water);
+     myList.addNode(recentData[0], recentData[1], water);
     // will need to instantiate read and write classes
     
     // cron is going to call main
