@@ -18,7 +18,7 @@ action = weatherList[1]
 
 
 # do we water?
-if(action == true):
+if(action == " True\n"):
     print("no rain, watering...")
 #    GPIO.output(17, GPIO.HIGH) # turn on the pin (to start the watering)
     print("for 100 seconds")
