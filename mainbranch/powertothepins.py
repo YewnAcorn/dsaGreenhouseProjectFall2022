@@ -12,25 +12,13 @@ for line in weatherData:
 last_line = line
 
 
-code = last_line.readline()
 
-if (code == 'rain\n'):
-    rain = True
-    print("rain = True")
-if(code == 'nope\n'):
-    rain = False
-    print("rain = False")
-else:
-    print("input error")
-    print(code)
-    for letter in code:
-        print(ord(letter))
-    print("string nope")
-    for letter in "nope":
-        print(ord(letter))
+weatherList = last_line.split(",")
+action = weatherList[1]
 
-# if it didn't rain
-if(rain != True):
+
+# do we water?
+if(action == true):
     print("no rain, watering...")
 #    GPIO.output(17, GPIO.HIGH) # turn on the pin (to start the watering)
     print("for 100 seconds")
