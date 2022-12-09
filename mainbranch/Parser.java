@@ -52,7 +52,7 @@ public class Parser {
 	//convert to strings    
 	String weatheridee = (String)weatherID;
 	String tempString = (String)temp;
-	String[] returnArray = {returnDate, weatheridee, tempString};
+	String[] returnArray = {weatheridee, returnDate, tempString};
 	
 	for(int b = 0; b < returnArray.length - 1; b++)
 	{
