@@ -36,7 +36,7 @@ public class shotcaller
 		if((code == 200) || (code == 201) || (code == 202) || (code == 230) || (code == 231) || (code == 232) || ((code >= 300) && (code < 400)) || ((code >= 500) && (code < 600))) 
 		{
 			System.out.println("rain");
-			Write_Out.addLineToFile(returnDate + ", false\n","activity_log.txt");
+			Write_Out.addLineToFile(returnDate + ", False\n","activity_log.txt");
 			// write out that we didn't water
 			// do we water?
 			return false;
@@ -44,7 +44,7 @@ public class shotcaller
 		else
 		{
 			System.out.println("nope");
-			Write_Out.addLineToFile(returnDate + ", true\n","activity_log.txt");
+			Write_Out.addLineToFile(returnDate + ", True\n","activity_log.txt");
 
 			// tell it to water
 			// write out that we watered
