@@ -13,7 +13,7 @@ public class Main {
 
      boolean water = recentData[0];
      shotcaller(water);
-     myList.addNode(recentData[0], recentData[1], water);
+     myList.addNode(recentData[0], recentData[1], recentData[2], water);
     // will need to instantiate read and write classes
     
     // cron is going to call main
