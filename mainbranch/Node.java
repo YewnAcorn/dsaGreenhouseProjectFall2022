@@ -1,9 +1,11 @@
 public class Node {
+    public String weather;
     public String date;
-    public String status;
-    public Node next;
-    public Node prev;
+    public String temp;
     public boolean water;
-    Node(String x, String y, boolean z) { status = x; date = y; water = z; }
+    public Node next; 
+    public Node prev;
+    Node(String w, String x, String y, boolean z) { weather = w; date = x; temp = y; water = z; }
     
 }
+
